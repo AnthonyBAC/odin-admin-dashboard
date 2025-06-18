@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "nav header"
+        "nav main"
+        "nav footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* general purpose */
+.centerVert {
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2A3F54;
+}
+
+.nav-container {
+    padding: 3rem;
+    gap: 5rem;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+
+header {
+    grid-area: header;
+    background-color: #FFFFFF;
+    height: auto;
+
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    grid-area: main;
+    background-color: green;
+    height: 100%;
+    overflow: auto;
+}
+
+footer {
+    grid-area: footer;
+    background-color: red;
+    height: 100px;
+    text-align: center;
+}
+
+/* logo */
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.logo-text {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    width: auto;
+
+
+}
+
+.cat {
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+}
+
+/* links nav */
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links_1,
+.nav-links_2 {
+    display: grid;
+    gap: 3rem;
+    height: fit-content;
+
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: auto;
+}
+
+/* icons */
+.png_icon_white,
+.png_icon_black {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.png_icon_white {
+    color: #FFFFFF;
+}
+
+.png_icon_black {
+    color: #000000;
+}
+
+.content-link {
+    display: grid;
+    grid-template-columns: fit-content(2rem) 1fr;
+    align-items: end;
+    gap: 1rem;
+}
+
+/* heeader */
+
+.search-bar-input {
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid #00000046;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.search-bar-input::placeholder {
+    text-transform: uppercase;
+}
+
+.search-bar-input:focus {
+    transition: all 0.3s ease;
+    border-color: #000000;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5rem;
+}
+
+.search-bar {
+    display: grid;
+    width: 100%;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 2rem;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/cat_profile.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 3;
+}
+
+.profile-text {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    width: auto;
+    grid-column: 2;
+    grid-row: 1;
+}
