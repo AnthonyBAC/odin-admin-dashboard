@@ -9,4 +9,8 @@ This project is a Frontend Admin Dashboard built as part of [The Odin Project](h
 
 ## Screenshot
 
+![Desktop Screenshot](./images/desktop-1750452354254.jpeg)
+
 ## Preview
+
+[Live Preview](https://anthonybac.github.io/odin-admin-dashboard/)
