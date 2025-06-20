@@ -41,7 +41,7 @@ body {
             "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
-        max-height: 100%;
+        height: auto;
     }
 
     .nav-container {
@@ -151,6 +151,18 @@ footer {
     max-width: 100%;
 
 }
+
+@media (max-width: 1024px) {
+    .nav-links {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        max-width: 100%;
+        display: none;
+    }
+
+}
+
 
 
 
@@ -445,6 +457,17 @@ button {
     gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        max-width: 100%;
+        min-height: 100%;
+        padding: 3rem;
+        gap: 2rem;
+    }
+}
+
 .main-container-left {
     display: grid;
     grid-template-rows: auto 1fr;
@@ -698,5 +721,5 @@ button:hover {
     border-radius: 2rem 0 0 2rem;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
     padding: 2rem;
-    width: 30rem;
+    width: 100%;
 }
